@@ -4,4 +4,7 @@
 */
 :root {
   --bg-cover: url(../images/cover-image-dark.png);
+  --main-font: 'IBM Plex mono', sans-serif;
+  --font-size: 18px;
+  --accent-color: #FF0070;
 }
