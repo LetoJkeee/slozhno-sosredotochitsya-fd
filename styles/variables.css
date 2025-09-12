@@ -6,5 +6,7 @@
   --bg-cover: url(../images/cover-image-dark.png);
   --main-font: 'IBM Plex mono', sans-serif;
   --font-size: 18px;
-  --accent-color: #FF0070;
-}
+  --accent-color: #FF0070; 
+  --main-text-color: #F1B2CE;
+  --heading-color: #000028;
+}  
