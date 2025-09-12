@@ -1,9 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 40px;
   background-image: var(--bg-cover);
   background-position: center;
   background-size: cover;
@@ -19,7 +16,7 @@
   align-items: center;
   block-size: 100dvh;
   min-block-size: 668px;
-  padding: 10px;
+  padding: var(--mobile-padding);
 }
 
 .decorated-item {
@@ -29,14 +26,14 @@
   color: var(--accent-color);
   font-family: var(--main-font, sans-serif);
   font-size: var(--font-size);
-  font-weight: 400;
+  font-weight: var(--alternative-font-weight);
   line-height: 25px;
   top: 10px;
   right: 38px;
 }
 
 .decorated-item::after {
-  content: "";
+  content: ""; 
   position: absolute;
   width: 10px;
   height: 10px;
@@ -72,7 +69,7 @@
 .header__theme-menu-list {
   justify-self: end;
   font-family: var(--main-font, sans-serif);
-  font-weight: 400;
+  font-weight: var(--alternative-font-weight);
   line-height: 18px; 
   color: var(--accent-color);
 }
@@ -85,7 +82,10 @@
   background: transparent;
   border: none;
   font-size: var(--font-size);
-  padding: 2px 12px;
+  padding-top: 1px;
+  padding-right: 12px;
+  padding-bottom: 3px;
+  padding-left: 13px;
 }
 
 .header__theme-menu-button_active {
@@ -104,7 +104,7 @@
 .header__title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82%;
-  font-weight: 700;
+  font-weight: var(--main-font-weight);
   color: #DB00FF;
   font-family: var(--main-font, sans-serif);
   text-shadow: 4px 4px 0 var(--accent-color);
@@ -114,12 +114,9 @@
   align-self: center;
   font-size: var(--font-size);
   font-family: var(--main-font, sans-serif);
-  font-weight: 700;
+  font-weight: var(--main-font-weight);
   line-height: 23.3px;
   color: var(--heading-color);
   background-color: var(--accent-color);
   text-align: left;
 }
-
-
-

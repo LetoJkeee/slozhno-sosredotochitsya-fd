@@ -9,4 +9,8 @@
   --accent-color: #FF0070; 
   --main-text-color: #F1B2CE;
   --heading-color: #000028;
+  --main-font-weight: 700;
+  --alternative-font-weight: 400;
+  --mobile-padding: 10px;
+  --desctop-padding: 20px;
 }  
