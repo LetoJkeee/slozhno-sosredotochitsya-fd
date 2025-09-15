@@ -16,9 +16,10 @@
   align-items: center;
   block-size: 100dvh;
   min-block-size: 668px;
-  padding: var(--mobile-padding);
+  padding: 10px;
+  margin-bottom: 40px;
 }
-
+ 
 .decorated-item {
   content: "";
   display: block;
@@ -92,6 +93,10 @@
   border: 1px solid var(--accent-color);
 }
 
+/*.header__theme-menu-button_active:focus-visible {                  Тут нАдо подумать на реализацией
+  border: none;
+}*/
+
 .header__theme-menu-button_active:hover {
   border: 1px solid rgb(255 0 112 / 0.4);
 }
@@ -111,12 +116,59 @@
 }
 
 .title-decor {
-  align-self: center;
+  /*align-self: center;*/
   font-size: var(--font-size);
   font-family: var(--main-font, sans-serif);
   font-weight: var(--main-font-weight);
-  line-height: 23.3px;
+  line-height: 23.4px;
   color: var(--heading-color);
   background-color: var(--accent-color);
   text-align: left;
+}
+
+                                         /* --Main section--*/
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 49px;
+}
+
+.content__section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: var(--mobile-padding);
+}
+
+.content__title {
+  font-size: var(--font-size);
+  font-family: var(--main-font, sans-serif);
+  font-weight: var(--main-font-weight);
+  line-height: 23.4px;
+  color: var(--accent-color);
+  text-align: left;
+}
+
+/*.article {
+
+}
+
+.article__title {
+}*/
+
+.decorative__link {
+  text-decoration: none;
+  cursor: pointer;
+  text-shadow: 2px 2px var(--accent-color);
+}
+
+.article__title-text {
+  font-size: var(--font-size);
+  font-family: var(--main-font, sans-serif);
+  font-weight: var(--alternative-font-weight);
+  line-height: 23.4px;
+  color: var(--main-text-color);
+  text-align: left;
+  margin-block-start: 10px;
 }

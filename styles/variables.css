@@ -11,6 +11,6 @@
   --heading-color: #000028;
   --main-font-weight: 700;
   --alternative-font-weight: 400;
-  --mobile-padding: 10px;
-  --desctop-padding: 20px;
+  --mobile-padding: 0 10px;
+  --desctop-padding: 0 20px;  
 }  
