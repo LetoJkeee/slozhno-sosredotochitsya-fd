@@ -17,7 +17,7 @@
   block-size: 100dvh;
   min-block-size: 668px;
   padding: 10px;
-  margin-bottom: 40px;
+  margin-block-end: 40px;
 }
  
 .decorated-item {
@@ -180,10 +180,32 @@
   font-weight: var(--alternative-font-weight);
 }
 
+.section-images {
+  gap: 10px;
+}
+
+.content__section-images {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.images {
+  height: 100%;
+  width: 100%;
+}
+
                                               /*--footer--*/
 
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  block-size: 100dvh;
+  min-block-size: 668px;
   padding: 10px;
+  margin-block-start: 40px;
 }
 
 .footer__title {
