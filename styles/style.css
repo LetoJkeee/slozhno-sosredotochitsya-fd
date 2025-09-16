@@ -161,9 +161,10 @@
   border-bottom: 1px solid var(--main-text-color);
 }
 
-.article__title-text .decorative__link:focus-visible {
-  outline: none;
-  border: 1px solid var(--main-text-color);
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .article__title-text {
@@ -173,7 +174,11 @@
   line-height: 23.4px;
   color: var(--main-text-color);
   text-align: left;
-  margin-block-start: 10px;
+}
+
+.article__title-text .decorative__link:focus-visible {
+  outline: none;
+  border: 1px solid var(--main-text-color);
 }
 
 .article__title {
