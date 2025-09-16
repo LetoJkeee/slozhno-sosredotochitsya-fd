@@ -210,7 +210,7 @@
 
 .footer__title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  line-height: 83%;
+  line-height: 84%;
   font-weight: var(--main-font-weight);
   color: #DB00FF;
   font-family: var(--main-font, sans-serif);
