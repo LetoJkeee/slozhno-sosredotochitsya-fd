@@ -91,6 +91,7 @@
 
 .header__theme-menu-button_active {
   border: 1px solid var(--accent-color);
+  pointer-events: none;
 }
 
 /*.header__theme-menu-button_active:focus-visible {                  Тут нАдо подумать на реализацией
@@ -99,6 +100,7 @@
 
 .header__theme-menu-button_active:hover {
   border: 1px solid rgb(255 0 112 / 0.4);
+  pointer-events: all;
 }
 
 .header__theme-menu-button:focus-visible {
@@ -107,7 +109,6 @@
 }
 
 .header__title {
-  justify-self: center;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 82%;
   font-weight: var(--main-font-weight);
@@ -129,8 +130,8 @@
                                          /* --Main section--*/
  
 .content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 49px;
 }
 
@@ -234,6 +235,7 @@
 
   .header__title {
     justify-self: start;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   } 
 
   .decorated-item {
@@ -258,5 +260,38 @@
 
   .content {
     gap: 80px;
+  }
+
+  .content__section-why {
+    grid-template-columns: repeat(3, 1fr);
+    padding: var(--desctop-padding);
+    column-gap: 40px;
+  }
+
+  .content__section-why .article {
+    grid-column: 2/4;
+  }
+
+  .content__section-what {
+    grid-template-columns: repeat(3, 1fr);
+    padding: var(--desctop-padding);
+  }
+
+  .content__section-what .article {
+    grid-column: 1/4;
+  }
+
+  .content__section-how {
+    grid-template-columns: repeat(3, 1fr);
+    padding: var(--desctop-padding);
+  }
+
+  .content__section-how h3 {
+    grid-column: 2/4;
+    align-self: self-start;
+  }
+
+  .content__section-how .article {
+    grid-column: 2/4;
   }
 }
