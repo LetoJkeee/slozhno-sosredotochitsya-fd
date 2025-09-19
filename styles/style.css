@@ -72,7 +72,7 @@
   font-family: var(--main-font, sans-serif);
   font-weight: var(--alternative-font-weight);
   line-height: 18px; 
-  color: var(--accent-color);
+  color: var( --menu-list-color);
 }
 
 .header__theme-menu-item {
@@ -114,7 +114,7 @@
   font-weight: var(--main-font-weight);
   color: var(--nofocus-color);
   font-family: var(--main-font, sans-serif);
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--background-text-color);
 }
 
 .title-decor {
@@ -123,7 +123,7 @@
   font-weight: var(--main-font-weight);
   line-height: 23.4px;
   color: var(--heading-color);
-  background-color: var(--accent-color);
+  background-color: var( --background-text-color);
   text-align: left;
 }
 
@@ -147,19 +147,19 @@
   font-family: var(--main-font, sans-serif);
   font-weight: var(--main-font-weight);
   line-height: 23.4px;
-  color: var(--accent-color);
+  color: var(--title-color);
   text-align: left;
 }
 
 .decorative__link {
   text-decoration: none;
   cursor: pointer;
-  text-shadow: 2px 2px var(--accent-color);
+  text-shadow: 2px 2px var(--background-text-color);
 }
 
 .decorative__link:hover {
   outline: none;
-  border-bottom: 1px solid var(--main-text-color);
+  border-bottom: 1px solid var(--main-text-color);        
 }
 
 .article {

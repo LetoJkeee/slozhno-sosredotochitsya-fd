@@ -11,23 +11,26 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-cover: url(../images/cover-image-light.png);
-  --accent-color: #ff8dcb;
+  --accent-color: #353430;
   --heading-color: #353430;
   --main-text-color: #353430;
+  --title-color: #353430; 
   --nofocus-color: #FFC2E6;
-  --background-color: #FFF1F7;    
+  --background-color: #FFF1F7;
+  --background-text-color: #FF8DCB;
+  --menu-list-color: #353430;  
 
   .header__title {
     color: var( --nofocus-color);
-    text-shadow: 4px 4px 0 var(--accent-color);
+    text-shadow: 4px 4px 0 var(--background-text-color);
   }
 
   .header__theme-menu-list {
-    color: var(--heading-color);
+    color: var(--menu-list-color);
   }
 
   .header__theme-menu-button_active {
-    outline: 1px solid var(--heading-color);
+    outline: 1px solid var(--main-text-color);
   }
 
   .header__theme-menu-button_active:hover {
@@ -55,7 +58,7 @@
   }
 
   .content__title {
-    color: var(--heading-color);
+    color: var(--title-color);
   }
 
   .article__title-text .decorative__link:focus-visible {
@@ -66,6 +69,70 @@
     color: var(--nofocus-color);
     text-shadow: 2px 2px 0 #FF0070;
   }
+}
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-cover: url(../images/cover-image-light.png);
+    --accent-color: #353430;
+    --heading-color: #353430;
+    --main-text-color: #353430;
+    --nofocus-color: #FFC2E6;
+    --background-color: #FFF1F7;
+    --background-text-color: #FF8DCB;
+    --menu-list-color: #353430;     
+
+  .header__title {
+    color: var( --nofocus-color);
+    text-shadow: 4px 4px 0 var(--background-text-color);
+  }
+
+  .header__theme-menu-list {
+    color: var(--menu-list-color);
+  }
+
+  .header__theme-menu-button_active {
+    outline: 1px solid var(--accent-color);
+  }
+
+  .header__theme-menu-button_active:hover {
+    outline: 1px solid rgb(50 49 45 / 0.4);
+    pointer-events: all;
+  }
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--accent-color);
+  }
+
+  .decorated-item {
+    display: none;
+  }
  
-} 
+  .decorated-zone::after {
+    border-bottom: 1px solid var(--accent-color);
+    border-left: 1px solid var(--accent-color);
+  }
+
+  .decorated-zone::before {
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+  }
+
+  .content__title {
+    color: var(--title-color);
+  }
+
+  .article__title-text .decorative__link:focus-visible {
+    outline: 1px solid var(--main-text-color);
+  } 
+
+  .footer__title {
+    color: var(--nofocus-color);
+    text-shadow: 2px 2px 0 #FF0070;
+    }
+  }
+}
+   
+
+  
