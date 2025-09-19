@@ -6,11 +6,13 @@
   --bg-cover: url(../images/cover-image-dark.png);
   --main-font: 'IBM Plex mono', sans-serif;
   --font-size: 18px;
+  --nofocus-color: #DB00FF;
   --accent-color: #FF0070; 
   --main-text-color: #F1B2CE;
   --heading-color: #000028;
+  --background-color: #000028;
   --main-font-weight: 700;
   --alternative-font-weight: 400;
   --mobile-padding: 0 10px;
-  --desctop-padding: 0 20px;  
-}  
+  --desctop-padding: 0 20px;   
+}   
