@@ -164,7 +164,7 @@
 
 .decorative__link:hover {
   outline: none;
-  border-bottom: 1px solid var(--main-text-color);        
+  border-bottom: 1px solid var(--main-text-color);
 }
 
 .article {
