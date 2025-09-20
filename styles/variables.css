@@ -6,7 +6,7 @@
   --bg-cover: url(../images/cover-image-dark.png);
   --main-font: 'IBM Plex mono', sans-serif;
   --font-size: 18px;
-  --nofocus-color: #DB00FF;
+  --headline: #DB00FF;
   --accent-color: #FF0070;
   --background-text-color: #FF0070;
   --menu-list-color: #FF0070;
@@ -16,6 +16,7 @@
   --background-color: #000028;
   --main-font-weight: 700;
   --alternative-font-weight: 400;
+  --logo-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --mobile-padding: 0 10px;
   --desctop-padding: 0 20px;
 }
