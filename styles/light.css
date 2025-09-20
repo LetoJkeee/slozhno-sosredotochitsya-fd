@@ -29,6 +29,10 @@
     color: var(--menu-list-color);
   }
 
+  .header__theme-menu-button:hover {
+  outline: 1px solid rgb(50 49 45 / 0.4);
+}
+
   .header__theme-menu-button_active {
     outline: 1px solid var(--main-text-color);
   }
@@ -77,6 +81,7 @@
     --accent-color: #353430;
     --heading-color: #353430;
     --main-text-color: #353430;
+    --title-color: #353430;
     --nofocus-color: #FFC2E6;
     --background-color: #FFF1F7;
     --background-text-color: #FF8DCB;
@@ -90,6 +95,10 @@
   .header__theme-menu-list {
     color: var(--menu-list-color);
   }
+
+  .header__theme-menu-button:hover {
+    outline: 1px solid rgb(50 49 45 / 0.4);
+}
 
   .header__theme-menu-button_active {
     outline: 1px solid var(--accent-color);
