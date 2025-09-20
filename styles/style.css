@@ -99,10 +99,6 @@
   pointer-events: none;
 }
 
-/*.header__theme-menu-button_active:focus-visible {                  Тут нАдо подумать на реализацией
-  border: none;
-}*/
-
 .header__theme-menu-button_active:hover {
   outline: 1px solid rgb(255 0 112 / 0.4);
   pointer-events: all;
