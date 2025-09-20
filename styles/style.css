@@ -34,7 +34,7 @@
 }
 
 .decorated-item::after {
-  content: ""; 
+  content: "";
   position: absolute;
   width: 10px;
   height: 10px;
@@ -71,7 +71,7 @@
   justify-self: end;
   font-family: var(--main-font, sans-serif);
   font-weight: var(--alternative-font-weight);
-  line-height: 18px; 
+  line-height: 18px;
   color: var( --menu-list-color);
 }
 
@@ -80,7 +80,7 @@
   padding: 7px 0;
 }
 
-.header__theme-menu-button { 
+.header__theme-menu-button {
   background: transparent;
   border: none;
   font-size: var(--font-size);
