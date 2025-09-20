@@ -15,26 +15,26 @@
   --title-color: #FF0070;
   --heading-color: #000028;
   --background-color: #000028;
-  --main-font-weight: 700; 
+  --main-font-weight: 700;
   --alternative-font-weight: 400;
   --mobile-padding: 0 10px;
   --desctop-padding: 0 20px;
-  
-.decorated-item {
-  display: block;
-}
 
-.header__theme-menu-button:hover {
-  outline: 1px solid rgb(255 0 112 / 0.4);
-}
-
-.header__theme-menu-button_active:hover {
-  outline: 1px solid rgb(255 0 112 / 0.4);
-  pointer-events: all;
+  .decorated-item {
+    display: block;
   }
-}   
 
- /* сохраните этот селектор в приведённом виде.
+  .header__theme-menu-button:hover {
+    outline: 1px solid rgb(255 0 112 / 0.4);
+  }
+
+  .header__theme-menu-button_active:hover {
+    outline: 1px solid rgb(255 0 112 / 0.4);
+    pointer-events: all;
+  }
+}
+
+/* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
