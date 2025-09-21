@@ -34,3 +34,29 @@
   }
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-cover: url(../images/cover-image-light.png);
+    --accent-color: #353430;
+    --heading-color: #353430;
+    --main-text-color: #353430;
+    --title-color: #353430;
+    --headline: #FFC2E6;
+    --background-color: #FFF1F7;
+    --background-text-color: #FF8DCB;
+    --menu-list-color: #353430;
+
+  .decorated-item {
+    display: none;
+  }
+
+  .header__theme-menu-button:hover {
+    outline: 1px solid rgb(50 49 45 / 0.4);
+  }
+
+  .header__theme-menu-button_active:hover {
+    outline: 1px solid rgb(50 49 45 / 0.4);
+    pointer-events: all;
+    }
+  }
+}
